@@ -19,18 +19,7 @@ app.get('/', (req, res) => {
 })
 
 app.get('/bio', (req, res) => {
-    res.send(`<!DOCTYPE html>
-    <html>
-    <head>
-    <title>Page Title</title>
-    </head>
-    <body>
-    
-    <h1>Bio</h1>
-    
-    <a href="/"> go to home </a>
-    </body>
-    </html>`)
+    res.sendFile(__dirname + "/pages/bio.html")
   })
 
 app.listen(port, () => {
