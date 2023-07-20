@@ -1,5 +1,6 @@
 import Image from 'next/image'
 import styles from './indexRoute.module.css';
+import Link from 'next/link';
 
 export default function Home() {
   return (
@@ -14,7 +15,10 @@ export default function Home() {
           height={37}
           priority
         />
-      </div>
+    <h1 className={styles.link}>
+   <Link href="/bio"> Bio!</Link>
+    </h1>      
+    </div>
     </main>
   )
 }
