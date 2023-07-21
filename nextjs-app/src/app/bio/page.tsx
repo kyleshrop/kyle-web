@@ -8,7 +8,7 @@ export default function BioRoute() {
     <main>
         <h1 className={styles.header}>Bio</h1>
         <h2 className={styles.link}>
-          <Link href="/">Back to home</Link>
+          <Link href="/">Back to home.</Link>
         </h2>
     </main>
   );
